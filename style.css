@@ -17,7 +17,7 @@ body {
     
 }
 
-.passgen {
+.password-box {
     display: flex;
     flex-direction: column;
     width: 550px;
