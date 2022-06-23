@@ -5,7 +5,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 
 let passwordLength = 15
 let passwordOne = document.getElementById("password-one")
-//let passwordTwo = document.getElementById("password-two")
+let passwordTwo = document.getElementById("password-two")
 
 function getRandomCharacter() {
     let randomIndex = Math.floor(Math.random() * characters.length)
@@ -21,10 +21,10 @@ function getRandomPassword() {
 }
 
 const generatePasswordOne = getRandomPassword()
-// const generatePasswordTwo = getRandomPassword()
+const generatePasswordTwo = getRandomPassword()
 
 // console.log(generatePasswordOne)
 // console.log(generatePasswordTwo)
 
 passwordOne.textContent = generatePasswordOne
-// passwordTwo.textContent = generatePasswordTwo
+passwordTwo.textContent = generatePasswordTwo
