@@ -5,26 +5,26 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 
 let passwordLength = 15
 let passwordOne = document.getElementById("password-one")
-let passwordTwo = document.getElementById("password-two")
+//let passwordTwo = document.getElementById("password-two")
 
-function getRandomCharacter(){
+function getRandomCharacter() {
     let randomIndex = Math.floor(Math.random() * characters.length)
         return characters[randomIndex]
 }
 
-function getRandomPassword(){
-    let randomPassword = ""
-    for (let i = 0; i = passwordLength; i++){
-        randomPassword += getRandomCharacter()
+function getRandomPassword() {
+    let newPassword = ""
+    for (let i = 0; i < passwordLength; i++){
+        newPassword += getRandomCharacter()
     }
-    return randomPassword
+    return newPassword
 }
 
 const generatePasswordOne = getRandomPassword()
-const generatePasswordTwo = getRandomPassword()
+// const generatePasswordTwo = getRandomPassword()
 
-console.log(generatePasswordOne)
-console.log(generatePasswordTwo)
+// console.log(generatePasswordOne)
+// console.log(generatePasswordTwo)
 
 passwordOne.textContent = generatePasswordOne
-passwordTwo.textContent = generatePasswordTwo
+// passwordTwo.textContent = generatePasswordTwo
