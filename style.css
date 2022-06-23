@@ -23,7 +23,6 @@ body {
     width: 550px;
     padding: 0 30px;
 }
-
 /* i want there to be less space under the h1. i am not sure how to do that. */
 
 
@@ -56,4 +55,13 @@ body {
     width: 225px;
     height: 40px;
     border-radius: 5px;
+}
+
+p {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
