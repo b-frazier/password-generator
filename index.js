@@ -20,11 +20,15 @@ function getRandomPassword() {
     return newPassword
 }
 
-const generatePasswordOne = getRandomPassword()
-const generatePasswordTwo = getRandomPassword()
+function renderPasswords(){
+    passwordOne.textContent = generatePasswordOne
+    passwordTwo.textContent = generatePasswordTwo
+}
+
+ const generatePasswordOne = getRandomPassword()
+ const generatePasswordTwo = getRandomPassword()
 
 // console.log(generatePasswordOne)
 // console.log(generatePasswordTwo)
 
-passwordOne.textContent = generatePasswordOne
-passwordTwo.textContent = generatePasswordTwo
+
